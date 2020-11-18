@@ -1,0 +1,44 @@
+utile per simulazioni matematiche
+
+molto diverso da C
+apprendere lingaggi di programmazione,
+vedere 2 estremi
+
+differenze:
+studieremo matlab per differenze
+
+- matlab è un linguaggoo interpretato, immediatezza di programmazine, 
+ambiente che riconda calcolatrice, interprete, interattivo, no compilato
+occupano più spazio e sono più lenti, per la loro velocità sono poco ottimizzabili
+
+dovessi compilare una lingua interpretato, dovrei mettere il codice dell'interprete all'interno del compilato
+
+- linguaggio dinamico (tipico di interpretati)
+C allocszione static, fortemente tipizzato
+
+MAth allocata a piacimento, no tipico
+testing veloce, meno vincolati, piu semplice fare errori, istruzioni poco efficienti
+
+variabili dichiarate usandoleù
+
+tutti i numwei aono gwatiti come doubel
+
+tipizzazione dinamica
+
+
+crea un vettor ch ha element cokmpresi tra 0 e pi/2 con passo p centesimi
+
+[0: pi/100 : pi/2]           51x2
+[0: pi/100 : pi/2]'
+[0: pi/100 : pi/2];
+
+; evita output, no visualizzare
+' matrice trasposta
+
+y = sin(x);                  51x1
+
+y = sin(x)
+
+[X, Y] ottego una matrice 5         1x2
+
+plot(x,y);

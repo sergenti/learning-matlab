@@ -1,0 +1,188 @@
+function Y = mySinh(x)
+    y = (exp(x) -exp(-x)) / 2;
+end
+
+mySinh(0)% 0
+
+X = 0:10;
+mySinh(x)
+
+function y = isEven(x)
+    y = ~mod(x, 2);
+end
+
+function y = isEven2(x)
+
+    if mod(x, 2) == 0
+        return true
+    else
+        return false
+    end
+
+end
+
+% if in matlab
+
+% solving linear equations
+
+Ax = b
+
+A = [3, 2, -1; 2, -2, 4; -1, 0.5, 1]
+B = [1 -2 -2]
+
+inv(A) \* b'
+
+%very inefficient way to solve
+
+A \ b%solves sistem of linear equations
+
+det(A)% determinant
+eig(A)% eigenvalues
+
+[V, D] = eig(A)
+
+A = [3, 2, -1; 2, -2, 4; -1, 0.5, 1]
+B = [1 -2 -2]
+
+% A =
+
+% 3.0000 2.0000 -1.0000
+% 2.0000 -2.0000 4.0000
+% -1.0000 0.5000 1.0000
+
+% B =
+
+% 1 -2 -2
+
+>> A \ B'
+
+% ans =
+
+% 0.4783
+% -0.7826
+% -1.1304
+
+>> [V D W] = eig(A)
+
+% V =
+
+% -0.3169 0.9334 -0.3634
+% 0.9319 0.0850 0.5712
+% -0.1764 -0.3486 0.7360
+
+% D =
+
+% -3.4375 0 0
+% 0 3.5557 0
+% 0 0 1.8818
+
+% W =
+
+% -0.3127 0.9194 0.3136
+% 0.6694 0.3476 0.2785
+% -0.6739 0.1842 0.9078
+
+A _ V == V _ D false
+
+1 == 1 true
+
+% normalization
+norm(v)
+norm(v, 2)% default
+norm(v, 1)
+norm(v, inf)
+
+%loops
+
+for i = [1, 2, 3, 4, 5]
+    disp(i)
+end
+
+for i = 1:10
+    disp i
+end
+
+%mean sqare error
+
+E = randn(1000, 1)% normaly distriuted, assumption we make often in statistical model
+
+SSE = 0
+
+for i0 1:1000
+    SSE = SSE + E(i)^2
+end
+
+SSE / 1000
+
+%for loops are inefficient
+
+% dot product of a vector to itself, summing all squared components
+E' \* E \ 1000
+
+%if statements
+X = 1:10
+Y = zeros(1, 10)
+
+function Y = isEven(X)
+
+    for i = 1:10
+
+        if mod(X(i), 2) == 0
+            Y(i) = 1
+        else
+            Y(i) = 0
+        end
+
+    end
+
+end
+
+function Y = isDivisibleBy3(X)
+
+    for i = 1:10
+
+        if mod(X(i), 3) == 0
+            S = S + X(i);
+        end
+
+    end
+
+end
+
+% for x = X
+
+function Y = isDivisibleBy3(x)
+
+    for i = 1:10
+
+        if mod(x, 3) == 0
+        end
+
+    end
+
+end
+
+found = 0;
+i = 0
+
+% find element within matrix
+
+while ~found
+    i + = 1
+
+    if X(i) == 8
+        disp("I found it")
+        found = true
+    end
+
+end
+
+for i = 1:10
+    fprintf('i = %d\n', i)
+
+    if X(i) == 8
+        disp("I found it!")
+        break;
+    end
+
+end

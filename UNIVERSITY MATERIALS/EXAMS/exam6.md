@@ -4,7 +4,7 @@
 A = 4*ones(randi([5 10]), randi([5 10]))
 ```
 
-##### Inserire dopo la prima colonna, una nuova colonna contenente numeri casuali da 0 a NxM dove N numero di righe e M numero di colonne. (max 1 riga) 
+##### Inserire dopo la prima colonna, una nuova colonna contenente numeri casuali da 0 a NxM dove N numero di righe e M numero di colonne.
 
 ```matlab
 A= [A(:,1) randi([0 size(A,1)*size(A,2)],[size(A,1) 1]) A(:,2:end)]

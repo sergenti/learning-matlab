@@ -5,8 +5,8 @@
 </div>
 
 ```matlab
-%==================================================================================%
-%                                       basics
+%=================================================================================================%
+%                                               basics
 
 % ROW vector
 >> A = [ 1 2 3 4 5]
@@ -31,8 +31,8 @@
 >> A = [ 1 2 3 4 5 ]
 >> B = [A; A.^2 ; A.^5]
 
-%==================================================================================%
-%                                  filling functions
+%=================================================================================================%
+%                                          filling functions
 
 % zeros(x) creates a matrix filled with zeros of specified dimensions
 >> A = zeros ( 3 )
@@ -59,9 +59,10 @@
 5  5
 5  5
 
-%==================================================================================%
-% diag() creating a diagonal matrix or extracting one
+%=================================================================================================%
+%                                             diagonality
 
+% diag() creating a diagonal matrix or extracting one
 % creating a diagonal matrix
 >> diag ( [ 1 2 3 4 ] )
 
@@ -85,8 +86,8 @@
 0  6   0
 0  0  11
 
-%==================================================================================%
-%                             Matrix/Vector concatenation
+%=================================================================================================%
+%                                      Matrix/Vector concatenation
 
 % these operations can only be done if the matrices/vectors are compatib
 >> A = [ 1 2 3];
@@ -112,15 +113,15 @@
 1  2  3
 4  5  6
 
-%==================================================================================%
-%                                   Determinant
+%=================================================================================================%
+%                                             Determinant
 
 % det for calculating the determinant
 >> A = [ 6 4 0 ; 4 2 7 ; 1 2 8]
 >> det (A) %ans−88.0000
 
-%==================================================================================%
-%                                      Selections
+%=================================================================================================%
+%                                              Selections
 
 % selecting from a to b using ' : ' operator (a:b) (step = 1)
 >> A = 3: 1 3
@@ -136,9 +137,11 @@ la stessa operazione può essere eseguita grazie alla funzione linspace.
 >> A = linspace( 11.5 , 14.2 , 7 )
 
 % selecting a whole row or a whole column using ' : ' operator
-% in general: rowX = M( X , : ), columnX = M( : , X )
+
 >> A = [ 1 2 3 4 5 6; 7 8 9 10 11 1 2; 13 14 15 16 17 1 8; 19 20 21 22 23 2 4; 25 26 27 28 29 3 0]
 >> row2= A( 2 , : )
 >> column3 = A( : , 3 )
+
+% in general: rowX = M( X , : ), columnX = M( : , X )
 
 ```

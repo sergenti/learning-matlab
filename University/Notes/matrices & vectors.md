@@ -28,7 +28,7 @@ you cannot delete a single cell of a matrix, you can only delete its content
 >> A( 2 : end ) %ans=[2 3 4 5]
 
 % You can create a matrix starting from vectors
-% (in this case we are creating a new matrix with the same number of columns as A but with 2 rows more according to the written operations)
+% same number of columns as A but with 2 rows more according to the written operations)
 % the . before makes matlab know to perform the operation on every single element.
 >> A = [ 1 2 3 4 5 ]
 >> B = [A; A.^2 ; A.^5]

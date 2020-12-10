@@ -51,10 +51,7 @@ Matlab can be use to solve matheatical expressions, here's how it can help you.
 >> E = 2∗ x^2 + 6∗ x + 4 ;
 >> pretty(E)
 ```
-
-$$
-2x^{2} +6x +4
-$$
+$2x^{2} +6x +4$
 
 ```matlab
 % SIMPLIFY - simplify equantion

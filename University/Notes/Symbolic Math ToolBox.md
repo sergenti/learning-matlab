@@ -50,10 +50,7 @@ Matlab can be use to solve matheatical expressions, here's how it can help you.
 % PRETTY - mathematical notation
 >> E = 2∗ x^2 + 6∗ x + 4 ;
 >> pretty(E)
-```
-$2x^{2} +6x +4$
 
-```matlab
 % SIMPLIFY - simplify equantion
 >> E = (1−x^2)/(1−x )
 >> simplify(E)

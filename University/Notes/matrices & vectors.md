@@ -7,8 +7,8 @@
 you cannot delete a single cell of a matrix, you can only delete its content
 
 ```matlab
-%=================================================================================================%
-%                                               basics
+
+%                                                                                     basics
 
 % ROW vector
 >> A = [ 1 2 3 4 5]
@@ -33,8 +33,7 @@ you cannot delete a single cell of a matrix, you can only delete its content
 >> A = [ 1 2 3 4 5 ]
 >> B = [A; A.^2 ; A.^5]
 
-%=================================================================================================%
-%                                          filling functions
+%                                                                                     filling functions
 
 % zeros(x) creates a matrix filled with zeros of specified dimensions
 >> A = zeros ( 3 )
@@ -61,8 +60,8 @@ you cannot delete a single cell of a matrix, you can only delete its content
 5  5
 5  5
 
-%=================================================================================================%
-%                                             diagonality
+
+%                                                                                     diagonality
 
 % diag() creating a diagonal matrix or extracting one
 % creating a diagonal matrix
@@ -89,8 +88,8 @@ you cannot delete a single cell of a matrix, you can only delete its content
 0  6   0
 0  0  11
 
-%=================================================================================================%
-%                                      Matrix/Vector concatenation
+
+%                                                                                     Matrix/Vector concatenation
 
 % these operations can only be done if the matrices/vectors are compatib
 >> A = [ 1 2 3];
@@ -120,15 +119,15 @@ you cannot delete a single cell of a matrix, you can only delete its content
 1  2  3
 4  5  6
 
-%=================================================================================================%
-%                                             Determinant
+
+%                                                                                     Determinant
 
 % det for calculating the determinant
 >> A = [ 6 4 0 ; 4 2 7 ; 1 2 8]
 >> det (A) %ans−88.0000
 
-%=================================================================================================%
-%                                              Selections
+
+%                                                                                     Selections
 
 % selecting from a to b using ' : ' operator (a:b) (step = 1)
 >> A = 3: 1 3

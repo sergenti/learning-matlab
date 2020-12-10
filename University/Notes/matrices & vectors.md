@@ -76,6 +76,7 @@ you cannot delete a single cell of a matrix, you can only delete its content
 % extracting the diagonal of a matrix
 >> A = [1  2  3  4  5; 4  5  6  7  8; 9 10 11 12 13]
 >>  diag (A)
+
 1
 3
 6
@@ -97,10 +98,12 @@ you cannot delete a single cell of a matrix, you can only delete its content
 
 % horizontal concatenation
 >> C = [A , B];
+
 1 2 3 4 5 6
 
 % verrical concatenation
 >> C = [A ; B];
+
 1  2  3
 4  5  6
 
@@ -108,10 +111,12 @@ you cannot delete a single cell of a matrix, you can only delete its content
 
 % horizontal concatenation
 >> D = horzcat (A,B)
+
 1 2 3 4 5 6
 
 % vertical concatenation
 >> E = vertcat (A,B)
+
 1  2  3
 4  5  6
 

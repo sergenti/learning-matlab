@@ -15,12 +15,13 @@
 1  2  8
 
 >> mean (A)
+
 3.6667  2.6667  5.0000
 
-% if you want to be precise use 1 or 2
-
+% if you want to be precise use 1 or 2:
 % columns
 >> mean (A, 1 )
+
 3.6667  2.6667  5.0000
 
 %rows
@@ -39,9 +40,9 @@
 
 % both REM & MOD calulate the rest after the division
 
-rem ( x , 0 ) NaN
-rem ( x , x ) % 0 if x!=0
-rem ( x , y ) % (x!=y, y!=0) same sign of x
+rem( x , 0 ) NaN
+rem( x , x ) % 0 if x!=0
+rem( x , y ) % (x!=y, y!=0) same sign of x
 
 mod( x , 0 ) % ans=x
 mod( x , x ) % ans=0
@@ -81,13 +82,13 @@ i= find(X, k)
 
 % all indexes containing number 3
 >> [ i , j ] = find(A==3)
-i =1
-j =3
+
+i = [1]
+j = [3]
 
 % getting all the inexes that contains a number divisible by two
 >> [ i , j ]= find(rem (A,2)==0)
 
-% output
 i = [2 1 3 2]
 j = [1 2 2 3]
 

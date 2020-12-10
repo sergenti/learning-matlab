@@ -4,6 +4,8 @@
 
 </div>
 
+you cannot delete a single cell of a matrix, you can only delete its content
+
 ```matlab
 %=================================================================================================%
 %                                               basics

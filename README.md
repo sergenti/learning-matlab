@@ -1,6 +1,6 @@
 <div align="center">
 
-# Learning: matlab
+# Learning: MATLAB
 
 ### Terrible syntax & array-indexing at 1.
 

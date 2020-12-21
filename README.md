@@ -3,9 +3,12 @@
 # Learning: matlab
 terrible syntax & array-indexing at 1. _Nothing to be done -Estragon_
 
-![cee4f670](https://user-images.githubusercontent.com/55017307/102819315-898fdf80-43d3-11eb-99b3-215ba882fb3b.jpg)
+<div style="display:flex;justify-content:space-evenly;flex:flex-grow;flex-grow:2" >
 
-![289ad89c1c216c5d3f4e8382587faa0e](https://user-images.githubusercontent.com/55017307/102819319-8ac10c80-43d3-11eb-84a3-72ee7d2feab7.jpg)
+   <img src="https://user-images.githubusercontent.com/55017307/102819315-898fdf80-43d3-11eb-99b3-215ba882fb3b.jpg" width="300"/>
+   
+<img src="https://user-images.githubusercontent.com/55017307/102819319-8ac10c80-43d3-11eb-84a3-72ee7d2feab7.jpg" width="300"/>
 
+</div>
 
 </div>

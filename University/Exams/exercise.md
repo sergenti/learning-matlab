@@ -81,6 +81,7 @@ M( rem(A,2)~=0 ) = 0
 
 ```matlab
 sqrt(sum(sum(A))
+sqrt(sum(A, 'all'))
 
 ans = 11.2250
 

@@ -1,7 +1,9 @@
 ```matlab
 % Mean of the whole matrix
 mean(mean(M))
-M = mean(A,'all')
+mean(A,'all')
+mean(A(:))
+
 
 % Mean of the first dimension
 mean(M, 1)

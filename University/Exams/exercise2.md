@@ -1,5 +1,5 @@
 ```matlab
-A = [ −9 9 −10 −4 −5; −9 −8 −3 1 3; 1 1 −7
+A = [ −9 9 −10 −4 −5; −9 −8 −3 1 3; 1 1 −7]
 ```
 
 ##### (a) Eliminare le colonne con media > 0
@@ -63,23 +63,26 @@ B = A - mean( A(A < 0) )
 
 ```matlab
 
+% if you are lazy
+function out = somma(n)
+   out = (n+1)*n/2;
+end
+
 % recursive
-function s = somma(n)
+function out = somma(n)
     if (n==0)
-        s=0;
+        out = 0;
     else
-        s = n + somma(n-1);
+        out = n + somma(n-1);
     end
 end
 
 % iterative
-
-function s = somma(n)
-sum = 0;
-for i= 1:1:n
-    sum = sum + i;
-end
-s=sum;
+function out = funzione(n)
+    out = 0;
+    for i= 1:1:n
+        out = out + i;
+    end
 end
 
 ```
@@ -88,7 +91,7 @@ end
 
 ```matlab
 
-functioin f = fibonacci(n)
+function f = fibonacci(n)
     if ( n==0 | n==1)
         f=0;
     else if ( n==2 )
@@ -97,6 +100,15 @@ functioin f = fibonacci(n)
         f= fibonacci(n-1) + fibonacci(n-2)
     end
 end
+
+function out = fibonacci(n)
+    if ( n<=1 )
+        out = n;
+    else
+        out = fibonacci(n-1) + fibonacci(n-2);
+    end
+end
+
 
 ```
 
@@ -144,10 +156,15 @@ mean( M( M > 3 ) )
 con la prima colonna in ultima posizione, la seconda in penultima...
 
 ```matlab
-function S = specchio(M)
-    for i=0:1:size(M,2)
-    M(:, size(M,2) -i) = M(:, 1+i)
+function N = funzione(M)
+    for  i= 1:1:size(M,2)
+        N(:,size(M,2)-i +1) = M(:,i);
     end
+end
+
+% better implementation
+function OUT = specchio(M)
+    OUT = [M(:, end:-1:1)];
 end
 
 ```

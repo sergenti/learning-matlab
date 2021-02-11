@@ -1,7 +1,7 @@
 ##### (a) Creare una matrice 4x5 contenente solo 3
 
 ```matlab
-A = 3∗ones( 4 , 5 )
+M = 3∗ones( 4 , 5 )
 
 3     3     3     3     3
 3     3     3     3     3
@@ -37,7 +37,7 @@ M( 2 , : ) = randi([1 5]  , [1 5])
 ##### (d) Inserire valori da 1 a 5 nella riga 2
 
 ```matlab
-A( 2 , : ) = 1:5
+M( 2 , : ) = 1:5
 
 3     3     3     3     3
 1     2     3     4     5
@@ -56,7 +56,7 @@ M( : , 1:2:end ) = 10
 
 M( : , 1:2:end ) = 10 ∗ ones( 4 , 3 )
 
-M( : , 1:2:end ) = 10 ∗ ones( size( A( : , 1:2:end ) ) )
+M( : , 1:2:end ) = 10 ∗ ones( size( M( : , 1:2:end ) ) )
 
 10     3     10     3     10
 10     2     10     4     10
@@ -68,7 +68,8 @@ M( : , 1:2:end ) = 10 ∗ ones( size( A( : , 1:2:end ) ) )
 ##### (f) sostituire i numeri dispari con 0
 
 ```matlab
-M( rem(A,2)~=0 ) = 0
+M( rem(M,2)~=0 ) = 0
+M( mod(M,2)==1 ) = 0
 
 10     0     10     0     10
 10     2     10     4     10

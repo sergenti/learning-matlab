@@ -87,7 +87,7 @@ ans =
 
 ```matlab
 
-C(:, randi([1, size(C,2)])) = 1
+C(:,  randi( size(C,2))) = 1
 C(:,  randi( size(C,2))) = ones ( size(C,1),1 )
 C(:,  randi( size(C,2))) = ones ( 1, size(C,1) )
 

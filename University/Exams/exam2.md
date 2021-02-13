@@ -38,11 +38,12 @@ sum(sum(C(:,1:2:end)))
 
 ```matlab
 function [out] = funzione(in)
-out = in;
-for i=2:1:size(in,1)-1
-    for j=2:1:size(in,2)-1
-        out(i,j) = 0;
+    out = in;
+    for i=2:1:size(in,1)-1
+        for j=2:1:size(in,2)-1
+            out(i,j) = 0;
         end
     end
 end
+
 ```
